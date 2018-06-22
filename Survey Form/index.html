@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Survey Form
+    </title>
+    <meta name="description" content="survey form">
+    <meta name="author" content="Mrwan Ashraf">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body id="body">
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    <section>
+      <main>
+        <p id="description">this survey is targeted toward those who love music &#9834;</p>
+      </main>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Music Survey</legend>
+          <div class="floats">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" class="textBoxes" type="text" placeholder="your name" required>
+          </div>
+          <div class="floats">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" class="textBoxes" type="email" placeholder="your email" required>
+          </div>
+          <div class="floats">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" class="textBoxes" type="number" min="1" max="120" placeholder="age" required> <!-- change max value -->
+          </div>
+          <div class="floats">
+             <label id="dropdown-label" for="dropdown">You're a</label>
+             <select id="dropdown" required>
+               <option>
+               </option>
+               <option value="Professional Musician">
+                 Professional Musician
+               </option>
+               <option value="Hobbyist Musician">
+                 Hobbyist Musician
+               </option>
+               <option value="Music Fan">
+                 Music Fan
+               </option>
+             </select>
+          </div>
+          <div class="notFloat">
+            <label>What's your favorite musical instrument?</label>
+            <div id="checkboxes">
+              <div>
+                <input id="classical" class="checkbox" type="checkbox" name="classical guitar" value="classical guitar">
+                <label for="classical">classical guitar</label>
+              </div>
+              <div class="checkbox">
+                <input  id="acoustic" type="checkbox" name="acoustic guitar" value="acoustic guitar">
+                <label for="acoustic">acoustic guitar</label>
+              </div>
+              <div class="checkbox">
+                <input  id="electric" type="checkbox" name="electric guitar" value="electric guitar">
+                <label for="electric">electric guitar</label>
+              </div>
+              <div class="checkbox">
+                <input  id="piano" type="checkbox" name="piano" value="piano">
+                <label for="piano">piano</label>
+              </div>
+              <div class="checkbox">
+                <input  id="drums" type="checkbox" name="drums" value="drums">
+                <label for="drums">drums</label>
+              </div>
+              <div class="checkbox">
+                <input  id="violin" type="checkbox" name="violin" value="violin">
+                <label for="violin">violin</label>
+              </div>
+              <div class="checkbox">
+                <input  id="cello" type="checkbox" name="cello" value="cello">
+                <label for="cello">cello</label>
+              </div>
+              <div class="checkbox">
+                <input  id="saxophone" type="checkbox" name="saxophone" value="saxophone">
+                <label for="saxophone">saxophone</label>
+              </div>
+              <div class="checkbox">
+                <input  id="trumpet" type="checkbox" name="trumpet" value="trumpet">
+                <label for="trumpet">trumpet</label>
+              </div>
+              <div class="checkbox">
+                <input  id="clarinet" type="checkbox" name="clarinet" value="clarinet">
+                <label for="clarinet">clarinet</label>
+              </div>
+              <div class="checkbox">
+                <input  id="flute" type="checkbox" name="flute" value="flute">
+                <label for="flute">flute</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label>What's your favorite music genre?</label>
+            <div id="radiobox">
+              <input type="radio" id="metal" name="genre" value="metal">
+              <label for="metal">Metal</label>
+            </div>
+            <div>
+              <input type="radio" id="rock" name="genre" value="rock">
+              <label for="rock">Rock</label>
+            </div>
+            <div>
+              <input type="radio" id="country" name="genre" value="country">
+              <label for="country">Country</label>
+            </div>
+            <div>
+              <input type="radio" id="blues" name="genre" value="blues">
+              <label for="blues">Blues</label>
+            </div>
+            <div>
+              <input type="radio" id="jazz" name="genre" value="jazz">
+              <label for="jazz">Jazz</label>
+            </div>
+            <div>
+              <input type="radio" id="pop" name="genre" value="pop">
+              <label for="pop">Pop</label>
+            </div>
+            <div>
+              <input type="radio" id="rnb" name="genre" value="rnb">
+              <label for="rnb">R&amp;B</label>
+            </div>
+            <div>
+              <input type="radio" id="classical" name="genre" value="classical">
+              <label for="classical">Classical</label>
+            </div>
+          </div>
+          <div>
+            <label  id="comments-label" for="comments">Any other instrument or genre you like that's not listed above?</label>
+            <textarea id="comments" placeholder="write it here"></textarea>
+          </div>
+          <input id="submit" type="submit">
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <h2>Survey Form by <a href="https://github.com/mrwanashraf" target="_blank">Mrwan Ashraf</a></h2>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  </body>
+</html>
