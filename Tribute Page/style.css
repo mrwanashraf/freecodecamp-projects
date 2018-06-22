@@ -1,0 +1,72 @@
+#main-f
+{
+  margin-top: 5%;
+  margin-left: 5%;
+   margin-right: 5%;
+}
+
+#leo-well
+{
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%
+
+
+}
+
+#title-l
+{
+
+   margin-left: 5%;
+   margin-right: 5%;
+  font-size:  150%
+
+}
+
+#his-work
+{
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+#quote
+{
+
+  margin-left: 10%;
+   margin-right: 10%;
+
+}
+blockquote
+{
+  border: 0;
+}
+
+#ending
+{
+  margin-left: 10%;
+   margin-right: 10%;
+  font-size: 100%;
+}
+#leo-img
+{
+  width: 100%;
+}
+
+#work
+{
+  padding-right: 10%;
+}
+
+h1 {
+  font-size: 350%;
+}
+h3
+{
+  font-size: 200%;
+}
+
+#hr-s
+{
+  margin-left: 5%;
+   margin-right: 5%;
+}
