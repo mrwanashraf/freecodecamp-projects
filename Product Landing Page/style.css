@@ -1,0 +1,265 @@
+body {
+ margin: 0;
+ max-width: 100%;
+}
+
+header {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+#header-img {
+  margin-left: 1%;
+}
+
+#nav-bar {
+  margin-right: 1%;
+  display: flex;
+}
+
+#nav-bar ul {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+#nav-bar li a {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+#main {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+}
+
+#main section {
+  width: 100%;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+#main h2 {
+  text-align: center;
+}
+
+#overview {
+  background-color: #98dafc;
+}
+
+#overview input[type="submit"] {
+  background-color: rgba(0, 0, 0,0.8);
+  color: #98dafc;
+  border: none;
+  border-radius: 10%;
+  padding: 5%;
+  width: 5vw;
+  align-self: center;
+  outline: none;
+}
+
+#overview input[type="submit"]:hover {
+  background-color: black;
+}
+
+#guitars {
+  background-color: #daad86;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#guitars img {
+  width: 50vw;
+  height: 100vh;
+}
+
+#pricing {
+  background-color: #312c32;
+  color: white;
+}
+
+#pricing section {
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pricing div {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #312c32;
+  border: 2px solid #daad86;
+  border-radius: 2%;
+  color: #daad86;
+  width: 20vw;
+  height: auto;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+}
+
+#pricing div button {
+  border: none;
+  background-color: rgba(218, 173, 134,0.8);
+  color: white;
+  width: 10vw;
+  padding: 5%;
+  border-radius: 5%;
+  outline: none;
+}
+
+#pricing div button:hover {
+  background-color: rgba(218, 173, 134,1);
+}
+
+#pricing p {
+  margin-bottom: auto;
+  color: white;
+}
+
+#pricing div h3 {
+  color: #98dafc;
+}
+
+.guitarInfo {
+  margin-top: -2vh;
+}
+
+#videoSection {
+  background-color: #98dafc;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+iframe {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, footer {
+  color: #daad86;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+a , a:visited, a:active, a:focus {
+  text-decoration: none;
+  color: #daad86;
+  font-weight: bold;
+}
+
+#collapse {
+ display: none;
+}
+
+a:hover {
+  color: #312c32;
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post p {
+  width: 80%;
+}
+
+@media all and (max-width: 600px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 95%;
+    height: 50vh;
+  }
+
+  .fas {
+    top: 20vh;
+  }
+
+  #collapse-container {
+    position: absolute;
+  }
+
+  #collapse {
+    position: relative;
+    display: block;
+    margin-top: -20vh;
+    margin-left: -48vw;
+  }
+
+  #collapse:hover {
+    cursor: pointer;
+  }
+
+  #guitars {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #guitars img {
+    width: 45vw;
+    height: 45vh;
+  }
+
+  #overview input[type="submit"] {
+    width: 20vw;
+  }
+
+  #pricing section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pricing div {
+    width: 50vw;
+  }
+
+  #pricing div button {
+    width: 25vw;
+  }
+
+  .hide {
+      display: none !important;
+  }
+
+  #main h2 {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+}

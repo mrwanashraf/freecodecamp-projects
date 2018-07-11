@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>Product Landing Page</title>
+   <meta name="description" content="Product Landing Page">
+   <meta name="author" content="Mrwan Ashraf">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <header id="header">
+     <a href="#"><img id="header-img" src="logo.png"></a>
+     <span id="collapse-container"><i id="collapse" class="fas fa-plus"></i></span>
+     <nav id="nav-bar" class="hide">
+       <ul>
+         <li><a href="#overview" class="nav-link">Overview</a></li>
+         <li><a href="#guitars" class="nav-link">Guitars</a></li>
+         <li><a href="#pricing" class="nav-link">Pricing</a></li>
+         <li><a href="#video" class="nav-link">Video</a></li>
+       </ul>
+
+     </nav>
+   </header>
+   <section id="main">
+     <section id="overview">
+       <h2>We are HandMade Guitars&copy;</h2>
+       <article class="post">
+         <p>at HandMade Guitars&copy; we make on demand custom guitars from scratch through our highly professionally trained luthiers so that you will have a guitar that will fit your style, your personality and will be made specially for your hand size so that you can slide your hand on the fretboard faster.</p>
+         <p>our guitars are made using the highest quality of materials.</p>
+         <p>wanna reach us out or get latest updates & offers from us?</p>
+         <form id="form" method="GET" action="https://www.freecodecamp.com/email-submit">
+           <input id="email" name="email" type="email" placeholder="youremail@website.com" required>
+           <input id="submit" name="email" type="submit" value="Send">
+         </form>
+      </article>
+     </section>
+     <section id="guitars">
+       <h2>Here are the kind of guitars we make</h2>
+       <img src="1.jpg">
+       <img src="2.jpg">
+       <img src="3.jpg">
+       <img src="4.jpg">
+       <img src="5.png">
+     </section>
+     <section id="pricing">
+       <h2>Pricing</h2>
+       <section>
+         <div>
+           <h3>classical guitar</h3>
+           <p>$150</p>
+           <button><i class="fas fa-shopping-cart"></i> Order</button>
+         </div>
+         <div>
+           <h3>acoustic guitar</h3>
+           <p>$250</p>
+           <button><i class="fas fa-shopping-cart"></i> Order</button>
+         </div>
+         <div>
+           <h3>electric guitar</h3>
+           <h4 class="guitarInfo">(les paul shape)</h4>
+           <p>$650</p>
+           <button><i class="fas fa-shopping-cart"></i> Order</button>
+         </div>
+         <div>
+           <h3>electric guitar</h3>
+           <h4 class="guitarInfo">(telecaster shape)</h4>
+           <p>$500</p>
+           <button><i class="fas fa-shopping-cart"></i> Order</button>
+         </div>
+         <div>
+           <h3>electric guitar</h3>
+           <h4 class="guitarInfo">(stratocaster shape)</h4>
+           <p>$550</p>
+           <button><i class="fas fa-shopping-cart"></i> Order</button>
+         </div>
+         <div>
+           <h3>bass guitar</h3>
+           <p>$600</p>
+           <button><i class="fas fa-shopping-cart"></i> Order</button>
+         </div>
+      </section>
+     </section>
+     <section id="videoSection">
+     <h2>get one of our guitars and practice everyday so that you can play this song as soon as possible</h2>
+     <iframe id="video" width="854" height="480" src="https://www.youtube.com/embed/vkUpfw4Hf3w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+   </section>
+   <footer>
+     <h3>by <a href="https://github.com/mrwanashraf" target="_blank">Mrwan Ashraf</a></h3>
+   </footer>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   <script src="collapse.js"></script>
+ </body>
+</html>
