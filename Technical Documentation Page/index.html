@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Techical Documentation Page">
+        <meta name="author" content="Mrwan Ashraf">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Technical Documentation Page
+        </title>
+    </head>
+    <body>
+        <header id="header">
+            <a href="#">
+                <h1>
+                <i id="js" class="fab fa-js"></i> Javascript Technical Documentation Page
+                </h1>
+            </a>        
+        </header>
+        <section id="sections-group">
+            <nav id="navbar">
+                    <header>Javascript reference</header>
+                    <ul>
+                        <li><a class="nav-link" href="#What_is_javascript?">What is javascript?</a></li>
+                        <li><a class="nav-link" href="#Javascript_and_Java">Javascript and Java</a></li>
+                        <li><a class="nav-link" href="#Javascript_arrays">Javascript arrays</a></li>
+                        <li><a class="nav-link" href="#Javascript_first_steps">Javascript first steps</a></li>
+                        <li><a class="nav-link" href="#A_re-introduction_to_javascript">A re-introduction to javascript</a></li>
+                        <li><a class="nav-link" href="#Javascript_guide">Javascript guide</a></li>
+                        <li><a class="nav-link" href="#Client-side_web_APIs">Client-side web APIs</a></li>
+                        <li><a class="nav-link" href="#Introducing_javascript_objects">Introducing javascript objects</a></li>
+                        <li><a class="nav-link" href="#Javascript_data_structures">Javascript data structures</a></li>
+                        <li><a class="nav-link" href="#Equality_comparisons_and_sameness">Equality comparisons and sameness</a></li>
+                        <li><a class="nav-link" href="#Closures">Closures</a></li>
+                        <li><a class="nav-link" href="#Full_reference">Full reference</a></li>
+                    </ul>
+            </nav>
+            <main id="main-doc">
+                    <section id="What_is_javascript?" class="main-section">
+                        <header>
+                            <h1>What is javascript?</h1>
+                        </header>    
+                        <p><strong>JavaScript (JS)</strong> is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+                        <p>Read more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript" target="_blank">about JavaScript.</a></p>
+                    </section>
+                    <section id="Javascript_and_Java" class="main-section">
+                        <header>
+                            <h1>Javascript and Java</h1>
+                        </header>    
+                        <p>Do not confuse JavaScript with the <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java programming language.</a></p>
+                        <p>Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and uses.</p>
+                    </section>
+                    <section id="Javascript_arrays" class="main-section">
+                        <header>
+                            <h1>Javascript arrays</h1>
+                        </header>    
+                        <p>The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects.</p>
+                        <ul>
+                            <li>
+                                <p>Create an Array</p>
+                                <code class="code">
+                                    <p>var fruits = ['Apple', 'Banana'];</p>
+                                    <p>console.log(fruits.length);</p>
+                                    <p>// 2</p>
+                                </code>
+                            </li>
+                            <li>
+                                    <p>Access (index into) an Array item</p>
+                                    <code class="code">
+                                        <p>var first = fruits[0];</p>
+                                        <p>// Apple</p>
+                                        <br>
+                                        <p>var last = fruits[fruits.length - 1];</p>
+                                        <p>// Banana</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Loop over an Array</p>
+                                    <code class="code">
+                                        <p>fruits.forEach(function(item, index, array) {</p>
+                                        <pre>   console.log(item, index);</pre>
+                                        <p>});</p>
+                                        <p>// Apple 0</p>
+                                        <p>// Banana 1</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Add to the end of an Array</p>
+                                    <code class="code">
+                                        <p>var newLength = fruits.push('Orange');</p>
+                                        <p>// ["Apple", "Banana", "Orange"]</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Remove from the end of an Array</p>
+                                    <code class="code">
+                                        <p>var last = fruits.pop(); // remove Orange (from the end)</p>
+                                        <p>// ["Apple", "Banana"];</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Remove from the front of an Array</p>
+                                    <code class="code">
+                                        <p>var first = fruits.shift(); // remove Apple from the front</p>
+                                        <p>// ["Banana"];</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Add to the front of an Array</p>
+                                    <code class="code">
+                                        <p>var newLength = fruits.unshift('Strawberry') // add to the front</p>
+                                        <p>// ["Strawberry", "Banana"];</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Find the index of an item in the Array</p>
+                                    <code class="code">
+                                        <p>fruits.push('Mango');</p>
+                                        <p>// ["Strawberry", "Banana", "Mango"]</p>
+                                        <br>
+                                        <p>var pos = fruits.indexOf('Banana');</p>
+                                        <p>// 1</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Remove an item by index position</p>
+                                    <code class="code">
+                                        <p>var removedItem = fruits.splice(pos, 1); // this is how to remove an item</p>
+                                        <br>
+                                        <p>// ["Strawberry", "Mango"]</p>
+                                    </code>
+                            </li>
+                            <li>
+                                    <p>Copy an Array</p>
+                                    <code class="code">
+                                        <p>var shallowCopy = fruits.slice(); // this is how to make a copy</p>
+                                        <p>// ["Strawberry", "Mango"]</p>
+                                    </code>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="Javascript_first_steps" class="main-section">
+                        <header>
+                            <h1>Javascript first steps</h1>
+                        </header>    
+                        <p>Answers some fundamental questions such as "what is JavaScript?", "what does it look like?", and "what can it do?", along with discussing key JavaScript features such as variables, strings, numbers, and arrays.</p>
+                        <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps" target="_blank">Javscript first steps</a></p>
+                    </section>
+                    <section id="Introducing_javascript_objects" class="main-section">
+                        <header>
+                            <h1>Introducing javascript objects</h1>
+                        </header>    
+                        <p>The object-oriented nature of JavaScript is important to understand if you want to go further with your knowledge of the language and write more efficient code, therefore we've provided this module to help you.</p>
+                        <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank">javascript objects</a></p>
+                    </section>
+                    <section id="Javascript_guide" class="main-section">
+                            <header>
+                                <h1>Javascript guide</h1>
+                            </header>    
+                            <p>A much more detailed guide to the JavaScript language, aimed at those with previous programming experience either in JavaScript or another language.</p>
+                            <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">javascript guide</a></p>
+                    </section>
+                    <section id="Client-side_web_APIs" class="main-section">
+                            <header>
+                                <h1>Client-side web APIs</h1>
+                            </header>    
+                            <p>When writing client-side JavaScript for web sites or applications, you won't go very far before you start to use APIs — interfaces for manipulating different aspects of the browser and operating system the site is running on, or even data from other web sites or services. In this module we will explore what APIs are, and how to use some of the most common APIs you'll come across often in your development work.</p>
+                            <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs" target="_blank">Client-side web APIs</a></p>
+                    </section>
+                    <section id="A_re-introduction_to_javascript" class="main-section">
+                            <header>
+                                <h1>A re-introduction to javascript</h1>
+                            </header>    
+                            <p>An overview for those who think they know about JavaScript.</p>
+                            <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank">re-introduction to javascript</a></p>
+                    </section>
+                    <section id="Javascript_data_structures" class="main-section">
+                            <header>
+                                <h1>Javascript data structures</h1>
+                            </header>    
+                            <p>Overview of available data structures in JavaScript.</p>
+                            <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">Javascript data structures</a></p>
+                    </section>
+                    <section id="Equality_comparisons_and_sameness" class="main-section">
+                            <header>
+                                <h1>Equality comparisons and sameness</h1>
+                            </header>    
+                            <p>JavaScript provides three different value-comparison operations: strict equality using <code>===</code>, loose equality using <code>==</code>, and the <code>Object.is()</code> method.</p>
+                            <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness" target="_blank">Equality comparisons and sameness</a></p>
+                    </section>
+                    <section id="Closures" class="main-section">
+                            <header>
+                                <h1>Closures</h1>
+                            </header>    
+                            <p>A closure is the combination of a function and the lexical environment within which that function was declared.</p>
+                            <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank">Closures</a></p>
+                    </section>
+                    <section id="Full_reference" class="main-section">
+                            <header>
+                                <h1>Full reference</h1>
+                            </header>    
+                            <p>the journey of javascript mastery starts with a simple hello world</p>
+                            <p>read more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a></p>
+                    </section>
+                </main>
+        </section>
+        <footer>
+            <h2>
+                By <a href="https://github.com/mrwanashraf" target="_blank">Mrwan Ashraf</a>
+            </h2>    
+        </footer>
+        <script src="script.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

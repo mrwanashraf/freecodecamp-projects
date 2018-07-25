@@ -1,0 +1,159 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+a, a:visited, a:active, a:focus {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
+#header {
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    text-align: center;
+    background-color: black;
+    color: #d3d3d3;
+}
+
+#js {
+    color:#f0db4f;
+    font-size: 125%;
+}
+
+#sections-group {
+    height: 85.6vh;
+}
+
+#sections-group #navbar {
+    width: 30%;
+    float: left;
+    overflow-y: auto;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#navbar {
+    background-color: black;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#navbar header {
+    padding-top: 2%;
+    margin-bottom: 10%;
+}
+
+#navbar li {
+    margin-bottom: 5%;
+}
+
+#sections-group #main-doc {
+    width: 70%;
+    float: right;
+    overflow-y: auto;
+    border-top: 1px solid #f0db4f;
+    border-bottom: 1px solid #f0db4f;
+}
+
+#main-doc {
+    background-color: #d3d3d3;
+    height: 100%;
+}
+
+#main-doc a, #main-doc a:visited,  #main-doc a:active, #main-doc a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+#main-doc a:hover {
+    color: black;
+}
+
+.code {
+    color: grey;
+}
+
+.main-section {
+    padding-left: 2%;
+    text-align: justify;
+    padding-right: 2%;
+    margin-bottom: 5%;
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: black;
+    color: #d3d3d3;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+h2 {
+    font-size: 95%;
+}
+
+h3 {
+    font-size: 60%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media all and (max-width: 1200px) {
+    h1 {
+        font-size: 2.75vmax;
+    }
+
+    h2 {
+        font-size: 2.7vmax;;
+    }
+
+    #sections-group #navbar {
+        font-size: 2.6vh;
+        text-align: center;
+    }
+
+    #navbar li {
+        font-size: 2.4vmax;
+    }
+    
+   
+    p {
+        font-size: 2.5vmax;
+        text-align: left;
+    }
+
+    .code p {
+        font-size: 1.8vmax;
+    }
+
+    .main-section h1 {
+        text-align: left;
+    }
+
+    #sections-group {
+        height: 80.6vh;
+    }
+
+    footer {
+        padding-top: 0.3vh;
+        padding-bottom: 0.3;
+    }
+}
