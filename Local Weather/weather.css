@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: white;
+    text-align: center;
+    background-image: url("https://cdn.dribbble.com/users/49684/screenshots/449695/minimal_weather.png");
+}
+
+section {
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0,0.8);
+    margin-top: 18vh;
+    width: 80vw;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 1%;
+
+}
+
+footer {
+
+        margin-top: 15vh;
+        color: black;
+}
+
+a {
+color: grey;
+text-decoration: none;
+}
+a:hover {
+color: white;
+}
+
+footer a {
+color: grey;
+}
+
+footer a:hover {
+color: black;
+}
+
+#first {
+margin-top: 5vh;
+}
+
+@media ( max-width: 600px ) {
+
+    h1 {
+    font-size: 3vh;
+    }
+    h2, label {
+    font-size: 2.8vh;
+    }
+    input[type="radio"] {
+    width: 2.8vh;
+    height: 2.8vh;
+    }
+    h3 {
+    font-size: 2.5vh;
+    }
+}
